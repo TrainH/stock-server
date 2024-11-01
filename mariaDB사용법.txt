@@ -1,0 +1,50 @@
+# 경로
+cd C:\Program Files\MariaDB 10.5\bin
+
+# 실행
+mysql.exe -u root -p
+
+
+# DB만들기
+
+
+
+CREATE DATABASE Kindex;
+
+CREATE DATABASE stock;
+
+
+# 쿼리문 (실행 상태)
+
+SHOW DATABASES;
+
+USE Investar;
+
+SHOW TABLES;
+
+SELECT VERSION();
+
+DROP DATABASES Investar;
+
+DROP DATABASE Kindex;
+
+DROP DATABASE market_ohlcv;
+
+DROP DATABASE market_ohlcv;
+
+
+# 테이블 삭제
+
+USE Stock;
+
+DROP TABLE IF EXISTS market_cap;
+
+EXIT;
+
+# .py 사용법
+
+
+# table 인덱스설정 : 조회 개빠름
+CREATE INDEX idx_date ON market_ohlcv(date);
+CREATE INDEX idx_date ON market_cap(date);
+CREATE INDEX idx_date ON market_fundamental(date);

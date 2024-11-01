@@ -338,3 +338,5 @@ if __name__ == '__main__':
         dbu3.replace_db(trade_busi_date)
 
     print(f"DBUpdater_CAP : Finished at {time.strftime('%X')}")
+    
+    
